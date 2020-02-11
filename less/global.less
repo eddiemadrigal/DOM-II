@@ -16,6 +16,11 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4rem;
+
+  @media @mobile {
+    padding: 10px 0;
+  }
+
 }
 
 h2 {
@@ -39,9 +44,30 @@ img {
   height: auto;
 }
 
+p#showY {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+}
+
 #emailGiven {
   text-align: center;
   display: none;
+}
+
+#scrollUp, #scrollDown {
+  cursor: pointer;
+  float: right;
+  margin: 5% 0;
+}
+
+#scrollUp {
+  margin-bottom: -20px;
+}
+
+#scrollUp:hover, #scrollDown:hover {
+  text-decoration: underline;
 }
 
 .formDiv {

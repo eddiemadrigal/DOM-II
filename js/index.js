@@ -1,12 +1,12 @@
 /*
 * [X] `mouseover`
 * [X] `keyup`
-* [ ] `wheel`
+* [X] `scroll`
 * [ ] `drag / drop`
 * [ ] `load`
 * [ ] `focus`
 * [ ] `resize`
-* [ ] `scroll`
+* [ ] `blur`
 * [ ] `select`
 * [ ] `dblclick`
 */
@@ -31,4 +31,9 @@ emailForm.addEventListener('keyup', (e) => {
     } else {
         displayEmail.style.display = "none";
     }
+});
+
+document.addEventListener('scroll', () => {
+    let showY = document.querySelector('#showY span');
+    showY.innerHTML = window.scrollY;
 });
