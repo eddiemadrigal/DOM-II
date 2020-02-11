@@ -163,6 +163,24 @@ img {
   max-width: 100%;
   height: auto;
 }
+#emailGiven {
+  text-align: center;
+  display: none;
+}
+.formDiv {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 15px;
+}
+.formDiv p {
+  margin-right: 10px;
+}
+@media (max-width: 786px) {
+  .formDiv {
+    width: 90%;
+  }
+}
 .container {
   max-width: 800px;
   width: 100%;

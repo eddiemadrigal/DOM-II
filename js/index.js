@@ -1,6 +1,6 @@
 /*
 * [X] `mouseover`
-* [ ] `keydown`
+* [X] `keyup`
 * [ ] `wheel`
 * [ ] `drag / drop`
 * [ ] `load`
@@ -22,4 +22,13 @@ h1Tag.addEventListener('mouseout', (e) => {
     h1Tag.style.transform = 'scale(1.0)';
 });
 
-
+const emailForm = document.querySelector('#emailForm');
+emailForm.addEventListener('keyup', (e) => {
+    let displayEmail = document.querySelector('p#emailGiven');
+    displayEmail.style.display = "block";
+    if (emailForm.value !== "") {
+        displayEmail.innerHTML = "Welcome " + emailForm.value;
+    } else {
+        displayEmail.style.display = "none";
+    }
+});
