@@ -209,14 +209,15 @@ p#showY {
 #dest1,
 #dest2 {
   width: 30%;
-  height: 200px;
-  border: 1px solid green;
-  border-radius: 10px;
   margin: 10px;
 }
 div#planningSection {
   display: flex;
   justify-content: space-evenly;
+}
+#dest1Check,
+#dest2Check {
+  display: none;
 }
 .formDiv {
   display: flex;
@@ -231,6 +232,11 @@ div#planningSection {
   .formDiv {
     width: 90%;
   }
+}
+#destination {
+  padding: 20px 0;
+  border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .container {
   max-width: 800px;

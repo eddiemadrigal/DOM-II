@@ -2,11 +2,11 @@
 * [X] `mouseover`
 * [X] `keyup`
 * [X] `scroll`
-* [ ] `drag / drop`
-* [ ] `load`
-* [ ] `focus`
-* [ ] `resize`
-* [ ] `blur`
+* [X] `dragstart`
+* [X] `dragend`
+* [X] `dragover`
+* [X] `dragenter`
+* [X] `drop`
 * [ ] `select`
 * [ ] `dblclick`
 */
@@ -57,6 +57,7 @@ plane.addEventListener('dragend', () => {
 });
 
 const dest1 = document.querySelector('#dest1');
+const dest1Check = document.querySelector('#dest1Check');
 
 dest1.addEventListener('dragover', e => {
     e.preventDefault();
@@ -67,5 +68,22 @@ dest1.addEventListener('dragenter', e => {
 });
 
 dest1.addEventListener('drop', () => {
-    dest1.append(draggedItem);
+    dest1Check.style.display = 'inline';
+    dest1Check.style.color = "green";
 });
+
+const dest2 = document.querySelector('#dest2');
+
+dest2.addEventListener('dragover', e => {
+    e.preventDefault();
+});
+
+dest2.addEventListener('dragenter', e => {
+    e.preventDefault();
+});
+
+dest2.addEventListener('drop', () => {
+    dest2Check.style.display = 'inline';
+    dest2Check.style.color = "green";
+});
+
