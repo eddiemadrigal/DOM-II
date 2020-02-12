@@ -37,3 +37,35 @@ document.addEventListener('scroll', () => {
     let showY = document.querySelector('#showY span');
     showY.innerHTML = window.scrollY;
 });
+
+let draggedItem = null;
+
+const plane = document.querySelector('p#plane');
+
+plane.addEventListener('dragstart', () => {
+    draggedItem = plane;
+    setTimeout(() => {
+        draggedItem.style.display = 'none';
+    }, 0);
+    
+});
+
+plane.addEventListener('dragend', () => {
+    setTimeout(() => {
+        draggedItem.style.display = 'block';
+    }, 0);
+});
+
+const dest1 = document.querySelector('#dest1');
+
+dest1.addEventListener('dragover', e => {
+    e.preventDefault();
+});
+
+dest1.addEventListener('dragenter', e => {
+    e.preventDefault();
+});
+
+dest1.addEventListener('drop', () => {
+    dest1.append(draggedItem);
+});
