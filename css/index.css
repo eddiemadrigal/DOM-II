@@ -183,18 +183,10 @@ p#showY {
   text-align: center;
   display: none;
 }
-#scrollUp,
 #scrollDown {
   cursor: pointer;
   float: right;
-  margin: 5% 0;
-}
-#scrollUp {
-  margin-bottom: -20px;
-}
-#scrollUp:hover,
-#scrollDown:hover {
-  text-decoration: underline;
+  margin-top: 2%;
 }
 #from {
   width: 30%;

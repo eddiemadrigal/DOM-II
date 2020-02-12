@@ -1,3 +1,8 @@
+gsap.to('.formDiv', {
+    duration: 2, 
+    rotation: 360
+});
+
 /*
 * [X] `mouseover`
 * [X] `keyup`
@@ -7,8 +12,8 @@
 * [X] `dragover`
 * [X] `dragenter`
 * [X] `drop`
-* [ ] `select`
-* [ ] `dblclick`
+* [X] `select`
+* [X] `dblclick`
 */
 
 const h1Tag = document.querySelector('h1.logo-heading');
@@ -31,6 +36,11 @@ emailForm.addEventListener('keyup', (e) => {
     } else {
         displayEmail.style.display = "none";
     }
+});
+
+emailForm.addEventListener('select', (e) => {
+    let text = e.target.value.substring(e.target.selectionStart, e.target.selectionEnd);
+    alert(text);
 });
 
 document.addEventListener('scroll', () => {
@@ -87,3 +97,8 @@ dest2.addEventListener('drop', () => {
     dest2Check.style.color = "green";
 });
 
+const scrollDown = document.querySelector('#scrollDown');
+
+scrollDown.addEventListener('dblclick', () => {
+    window.scrollTo(0, 2000);
+});
