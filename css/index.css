@@ -146,9 +146,19 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    padding: 10px 0;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.8rem;
+  padding-bottom: 10px;
+  color: green;
 }
 h4 {
   font-size: 2.5rem;
@@ -163,6 +173,63 @@ img {
   max-width: 100%;
   height: auto;
 }
+p#showY {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+}
+#emailGiven {
+  text-align: center;
+  display: none;
+}
+#scrollDown {
+  cursor: pointer;
+  float: right;
+  margin-top: 2%;
+}
+#from {
+  width: 30%;
+  margin: 0 auto;
+}
+#from h3 {
+  text-align: center;
+}
+#from p {
+  text-align: center;
+}
+#dest1,
+#dest2 {
+  width: 30%;
+  margin: 10px;
+}
+div#planningSection {
+  display: flex;
+  justify-content: space-evenly;
+}
+#dest1Check,
+#dest2Check {
+  display: none;
+}
+.formDiv {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 15px;
+}
+.formDiv p {
+  margin-right: 10px;
+}
+@media (max-width: 786px) {
+  .formDiv {
+    width: 90%;
+  }
+}
+#destination {
+  padding: 20px 0;
+  border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -176,7 +243,6 @@ img {
 }
 .main-navigation {
   width: 100%;
-  height: 90px;
   background: #FFFFFF;
   border-bottom: 2px dashed #C0C0C0;
   position: fixed;
@@ -186,6 +252,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 0;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container {

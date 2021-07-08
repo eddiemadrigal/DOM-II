@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -9,18 +10,23 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
-  <script src="js/index.js" async></script>
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  
+  <script src="https://kit.fontawesome.com/d8a810ffe0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <header class="main-navigation">
+    <p id="showY">ScrollY: <span>0</span></p>
     <div class="container nav-container">
+
       <h1 class="logo-heading">Fun Bus</h1>
+
       <nav class="nav">
         <a class="nav-link" href="#">Home</a>
         <a class="nav-link" href="#">About Us</a>
@@ -29,62 +35,120 @@
       </nav>
     </div>
   </header>
-     
+
   <div class="container home">
     <header class="intro">
       <img src="img/fun-bus.jpg" alt="bus in the sand">
+      <p id="scrollDown">Scroll Down</p>
       <h2>Welcome To Fun Bus!</h2>
-      <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
+      <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design,
+        travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun
+        traveler pretty design website expedition.</p>
+      <div class="formDiv">
+        <p>Sign up for our newsletter</p>
+        <form>
+          <input type="text" placeholder="email" id="emailForm" autocomplete="off">
+          <input type="submit">
+        </form>
+      </div>
+      <p id="emailGiven"></p>
     </header>
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
-        <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty
+          simple traveling fun WordPress wanderlust darn simple organized.</p>
+        <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website
+          theme.</p>
       </div>
       <div class="img-content">
         <img src="img/adventure.jpg" alt="Let's go on an adventure!">
       </div>
     </section>
+    <section id="destination">
+      <h2>Design your specific adventure!!</h2>
+      <div id='planningSection'>
+        <div id='from'>
+          <h3>Drag your plane to your dream destination</h3>
+          <p id="plane" draggable="true"><i class="fas fa-plane fa-7x"></i></p>
+        </div>
+        <div id='dest1'><span id="dest1Check"><i class="fas fa-check-circle fa-7x"></i></span><a
+            style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+            href="https://unsplash.com/@kiarash_mansouri?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+            target="_blank" rel="noopener noreferrer"
+            title="Download free do whatever you want high-resolution photos from Kiarash Mansouri"><span
+              style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                viewBox="0 0 32 32">
+                <title>unsplash-logo</title>
+                <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+              </svg></span><span style="display:inline-block;padding:2px 3px">Kiarash Mansouri - Hawaii</span></a><img
+            src="img/hawaii.jpg"></div>
+
+        <div id='dest2'><span id="dest2Check"><i class="fas fa-check-circle fa-7x"></i></span><a
+            style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+            href="https://unsplash.com/@arty_nyc?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+            target="_blank" rel="noopener noreferrer"
+            title="Download free do whatever you want high-resolution photos from Arthur Osipyan"><span
+              style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                viewBox="0 0 32 32">
+                <title>unsplash-logo</title>
+                <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+              </svg></span><span style="display:inline-block;padding:2px 3px">Arthur Osipyan - England</span></a><img
+            src="img/england.jpg"></div>
+      </div>
+
+    </section class="content-section">
     <section class="content-section inverse-content">
       <div class="img-content">
-          <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
+        <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
       </div>
       <div class="text-content">
         <h2>Adventure Awaits</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
-        <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty
+          simple traveling fun WordPress wanderlust darn simple organized.</p>
+        <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website
+          theme.</p>
       </div>
-     
+
     </section>
     <section class="content-destination">
       <h2>Pick Your Destination</h2>
-      <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+      <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign.
+        Traveler blogger website design expedition clean excursion traveling.</p>
       <img src="img/destination.jpg" alt="Second slide">
     </section>
     <section class="content-pick">
 
       <div class="destination">
         <h4>Fun In The Sun</h4>
-        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
+          Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
-        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
+          Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
-        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
+          Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
+
       </div>
     </section>
+
   </div><!-- container -->
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+  <script src="js/index.js" async></script>
 </body>
+
 </html>
